@@ -1,0 +1,12 @@
+[user]
+	name = Kjetil Indrehus
+	email = kjetilindrehus@gmail.com
+[protocol]
+	version = 1
+[credential]
+	helper = manager
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
